@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <nav className="w-full h-[10vh] bg-black flex">
+    <nav className="w-[100%] h-[10vh] bg-black flex">
       <div className="flex w-1/2 h-full justify-normal items-center px-7 text-white">
         <Link legacyBehavior href="/">
           <a className="font-bold text-green-400">Raja Umer Saleem</a>

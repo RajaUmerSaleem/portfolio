@@ -5,7 +5,7 @@ import { FaFileDownload } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 export default function Home() {
   return (
-    <main className=" h-[100vh] w-[60vw] m-auto">
+    <main className=" h-[100%] w-[100%]  m-auto sm:w-[60%]">
       <Nav />
       <div className="w-full h-[70vh] flex gap-3 py-4">
         <div className="w-1/2 h-[100%]  flex justify-center items-center">

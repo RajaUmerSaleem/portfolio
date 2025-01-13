@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .neon-green {
+    background-color: #32CD32; /* LimeGreen color */
+    box-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32, 0 0 20px #32CD32, 0 0 40px #32CD32, 0 0 80px #32CD32;
+  }
+}
 .neon-border {
   position: relative;
   width: 300px;
@@ -25,4 +31,22 @@
   border: 2px solid rgba(83, 251, 11, 0.5);
   box-shadow: 0 0 20px rgba(83, 251, 11, 0.5);
   animation: rotate 5s linear infinite reverse;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #32CD32;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #32CD32, 0 0 10px #32CD32;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2ab52a;
+  box-shadow: 0 0 10px #32CD32, 0 0 20px #32CD32;
 }
