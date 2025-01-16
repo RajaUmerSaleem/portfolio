@@ -9,7 +9,7 @@ export default function Home() {
       <>
     <main className="h-full w-full m-auto sm:w-[90%] md:w-[80%] lg:w-[60%] overflow-scroll custom-scrollbar">
     <Nav />
-      <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-[20vh] gap-3 py-4 ">
+      <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-[10vh] gap-3 py-4 ">
         <div className="w-full md:w-1/2 h-auto flex justify-center items-center">
           <div className="p-6 text-center text-white">
             <h1 className="font-bold text-white text-wrap text-4xl md:text-5xl lg:text-6xl">
@@ -20,8 +20,8 @@ export default function Home() {
               <span className="text-green-500"> optimized</span>, and
               <span className="text-green-500"> responsive</span> websites that help businesses <span className="text-green-500"> grow faster</span>.
             </p>
-            <div className="mt-4 flex justify-center items-center gap-4">
-              <a href="https://www.linkedin.com/in/raja-umer-saleem" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
+            <div className="mt-4 flex justify-center items-center gap-4 ">
+              <a href="https://www.linkedin.com/in/raja-umer-saleem" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 transition-colors">
                 <BsLinkedin size={30} />
               </a>
               <a href="https://github.com/RajaUmerSaleem" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">

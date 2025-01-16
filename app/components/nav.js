@@ -10,7 +10,7 @@ const Nav = () => {
           <a className="font-bold text-green-400 text-lg">Raja Umer Saleem</a>
         </Link>
       </div>
-      <div className="flex items-center md:static absolute top-0 right-1">
+      <div className="flex items-center md:static absolute top-1 right-1 md:bg-transparent bg-gray-900">
         <ul className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 text-center md:text-left">
           <li className="flex justify-center items-center">
             <Link legacyBehavior href="/">

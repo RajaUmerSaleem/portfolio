@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { FaHtml5 } from "react-icons/fa6";
 import { SiCss3 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -14,7 +14,8 @@ import { SiExpress } from "react-icons/si";
 import { SiChartdotjs } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiXampp } from "react-icons/si";
-const page = () => {
+
+const SkillsPage = () => {
   return (
     <>
       <div className='h-[10vh] text-4xl font-bold flex items-center pl-10 text-white'>
@@ -71,4 +72,4 @@ const page = () => {
   )
 }
 
-export default page
+export default memo(SkillsPage)

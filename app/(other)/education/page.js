@@ -1,7 +1,7 @@
 "use client"
+import { memo } from 'react';
 import React from 'react';
 import { motion } from "motion/react";
-
 const institutes = [
   {
     id: 1,
@@ -89,4 +89,4 @@ const EducationPage = () => {
   );
 };
 
-export default EducationPage;
+export default React.memo(EducationPage);
