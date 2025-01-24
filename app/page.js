@@ -1,3 +1,4 @@
+"use client"
 import React, { memo } from 'react';
 import Image from "next/image";
 import Nav from "./components/nav";
@@ -44,7 +45,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <footer className="w-full h-[10vh] font-mono text-xl md:text-4xl md:font-extrabold flex justify-center items-center text-white text-center">
+        <footer className="w-full h-[10vh] font-bold text-xl md:text-4xl md:font-extrabold flex justify-center items-center text-white text-center">
           Ready to Take Your Business to the Next Level?
         </footer>
       </main>

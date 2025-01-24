@@ -1,4 +1,5 @@
-import React, { memo } from 'react'
+"use client"
+import React, { memo } from 'react';
 import { FaHtml5 } from "react-icons/fa6";
 import { SiCss3 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -15,6 +16,24 @@ import { SiChartdotjs } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiXampp } from "react-icons/si";
 
+const skills = [
+  { name: 'HTML5', icon: FaHtml5, size: 150 },
+  { name: 'CSS3', icon: SiCss3, size: 130 },
+  { name: 'Tailwind CSS', icon: RiTailwindCssFill, size: 150 },
+  { name: 'Next.js', icon: SiNextdotjs, size: 140 },
+  { name: 'Preact', icon: SiPreact, size: 140 },
+  { name: 'Postman', icon: SiPostman, size: 140 },
+  { name: 'Bootstrap', icon: SiBootstrap, size: 140 },
+  { name: 'GitHub', icon: FaGithubSquare, size: 150 },
+  { name: 'Git', icon: FaGitAlt, size: 150 },
+  { name: 'JavaScript', icon: FaJs, size: 150 },
+  { name: 'Node.js', icon: IoLogoNodejs, size: 150 },
+  { name: 'Express', icon: SiExpress, size: 140 },
+  { name: 'Chart.js', icon: SiChartdotjs, size: 140 },
+  { name: 'MongoDB', icon: SiMongodb, size: 140 },
+  { name: 'XAMPP', icon: SiXampp, size: 130 },
+];
+
 const SkillsPage = () => {
   return (
     <>
@@ -22,54 +41,15 @@ const SkillsPage = () => {
         Skills
       </div>
       <div className='flex justify-center flex-wrap h-[80vh] w-[100%] overflow-scroll overflow-x-hidden custom-scrollbar'>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <FaHtml5 size={150} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiCss3 size={130} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <RiTailwindCssFill size={150} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiNextdotjs size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiPreact size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiPostman size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiBootstrap size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <FaGithubSquare size={150} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <FaGitAlt size={150} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <FaJs size={150} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <IoLogoNodejs size={150} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiExpress size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiChartdotjs size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiMongodb size={140} className="text-white" />
-        </div>
-        <div className='w-[150px] h-[150px] m-2 flex justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
-          <SiXampp size={130} className="text-white " />
-        </div>
+        {skills.map((skill, index) => (
+          <div key={index} className='w-[150px] h-[150px] m-2 flex flex-col justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
+            <skill.icon size={skill.size} className="text-white" />
+            <span className="mt-2  font-bold text-white">{skill.name}</span>
+          </div>
+        ))}
       </div>
     </>
-  )
+  );
 }
 
-export default memo(SkillsPage)
+export default memo(SkillsPage);
