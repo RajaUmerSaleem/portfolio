@@ -21,7 +21,7 @@ const skills = [
   { name: 'CSS3', icon: SiCss3, size: 130 },
   { name: 'Tailwind CSS', icon: RiTailwindCssFill, size: 150 },
   { name: 'Next.js', icon: SiNextdotjs, size: 140 },
-  { name: 'Preact', icon: SiPreact, size: 140 },
+  { name: 'React.js', icon: SiPreact, size: 140 },
   { name: 'Postman', icon: SiPostman, size: 140 },
   { name: 'Bootstrap', icon: SiBootstrap, size: 140 },
   { name: 'GitHub', icon: FaGithubSquare, size: 150 },
@@ -42,7 +42,7 @@ const SkillsPage = () => {
       </div>
       <div className='flex justify-center flex-wrap h-[80vh] w-[100%] overflow-scroll overflow-x-hidden custom-scrollbar'>
         {skills.map((skill, index) => (
-          <div key={index} className='w-[150px] h-[150px] m-2 flex flex-col justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
+          <div key={index} className='w-[180px] h-[180px] m-2 flex flex-col justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
             <skill.icon size={skill.size} className="text-white" />
             <span className="mt-2  font-bold text-white">{skill.name}</span>
           </div>
