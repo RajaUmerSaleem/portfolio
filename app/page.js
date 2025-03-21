@@ -10,14 +10,14 @@ const Home = () => {
     <>
       <main className="h-[100%] w-full m-auto sm:w-[90%] md:w-[80%] lg:w-[90%] overflow-scroll custom-scrollbar relative pt-10">
         <Nav />
-        <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-[10vh] gap-3 py-4 ">
+        <div className="w-full h-[full] flex flex-col-reverse md:flex-row mt-[5vh] md:mt-[10vh] gap-3 py-4 ">
           <div className="w-full md:w-1/2 h-auto flex justify-center items-center">
             <div className="p-6 text-center text-white">
-              <h1 className="font-bold text-white text-wrap text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="font-bold text-white text-wrap  text-4xl md:text-5xl lg:text-6xl">
                 Building Optimize Web Solutions
               </h1>
-              <h1 className="font-bold text-gray-400 text-wrap text-2xl md:text-3xl lg:text-5xl">
-              No More Business Loss
+              <h1 className="font-bold font-serif text-gray-400 text-wrap text-2xl md:text-3xl lg:text-5xl">
+              No More Business Loss!!
               </h1>
               <p className="mt-4 text-lg md:text-xl lg:text-2xl">
                 <span className="text-green-500">Nextjs - MERN Stack - Data Visvulisation Web Applications</span>
@@ -46,11 +46,11 @@ const Home = () => {
           </div>
         </div>
 
-        <footer className="w-full h-[10vh] font-bold md:mt-5 text-xl md:text-6xl md:font-extrabold flex justify-center items-center  text-center text-gray-400">
+        <div className="w-full h-[10vh] mt-0 font-semibold font-serif md:mt-5 text-xl md:text-6xl md:font-extrabold flex justify-center items-center  text-center text-gray-400">
           Ready to Take Your Business to the Next Level?
-        </footer>
+        </div>
+        
 
-      
       </main>
     </>
   );

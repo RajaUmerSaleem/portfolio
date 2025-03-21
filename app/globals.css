@@ -52,3 +52,21 @@
 .animate-blink {
   animation: blink 1s infinite;
 }
+.loader {
+  border-top-color: #32CD32;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.grid {
+  background-image: linear-gradient(rgba(0, 255, 17, 0.1) 1px, transparent 0.02px), linear-gradient(90deg, rgba(0, 255, 17, 0.1) 1px, transparent 0.02px);
+  background-size: 40px 40px;
+}

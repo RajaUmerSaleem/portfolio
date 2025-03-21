@@ -14,7 +14,6 @@ import { IoLogoNodejs } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { SiChartdotjs } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import { SiXampp } from "react-icons/si";
 
 const skills = [
   { name: 'HTML5', icon: FaHtml5, size: 150 },
@@ -31,7 +30,6 @@ const skills = [
   { name: 'Express', icon: SiExpress, size: 140 },
   { name: 'Chart.js', icon: SiChartdotjs, size: 140 },
   { name: 'MongoDB', icon: SiMongodb, size: 140 },
-  { name: 'XAMPP', icon: SiXampp, size: 130 },
 ];
 
 const SkillsPage = () => {
@@ -41,6 +39,10 @@ const SkillsPage = () => {
         Skills
       </div>
       <div className='flex justify-center flex-wrap h-[80vh] w-[100%] overflow-scroll overflow-x-hidden custom-scrollbar'>
+      <div className="text-gray-200 text-center p-4 italic">
+          <span className="text-green-500">Note:</span> As a Computer Scientist, I am always learning new technologies and tools. The list below is not cover all my skills, but it does represent the technologies I have used most frequently in my Web Developement projects.
+          Currently, I am Learning and Building AI, Advance DBMS and Blockchain.
+  </div>
         {skills.map((skill, index) => (
           <div key={index} className='w-[180px] h-[180px] m-2 flex flex-col justify-center items-center bg-gray-800 hover:bg-green-500 transition-colors'>
             <skill.icon size={skill.size} className="text-white" />
