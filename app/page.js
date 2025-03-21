@@ -5,22 +5,22 @@ import Nav from "./components/nav";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-
 const Home = () => {
   return (
     <>
-      <main className="h-full w-full m-auto sm:w-[90%] md:w-[80%] lg:w-[60%] overflow-scroll custom-scrollbar">
+      <main className="h-[100%] w-full m-auto sm:w-[90%] md:w-[80%] lg:w-[90%] overflow-scroll custom-scrollbar relative pt-10">
         <Nav />
         <div className="w-full h-auto flex flex-col-reverse md:flex-row md:mt-[10vh] gap-3 py-4 ">
           <div className="w-full md:w-1/2 h-auto flex justify-center items-center">
             <div className="p-6 text-center text-white">
               <h1 className="font-bold text-white text-wrap text-4xl md:text-5xl lg:text-6xl">
-                Full Stack Web Developer
+                Building Optimize Web Solutions
+              </h1>
+              <h1 className="font-bold text-gray-400 text-wrap text-2xl md:text-3xl lg:text-5xl">
+              No More Business Loss
               </h1>
               <p className="mt-4 text-lg md:text-xl lg:text-2xl">
-                Passionate about building <span className="text-green-500">SEO-friendly</span>,
-                <span className="text-green-500"> optimized</span>, and
-                <span className="text-green-500"> responsive</span> websites that help businesses <span className="text-green-500"> grow faster</span>.
+                <span className="text-green-500">Nextjs - MERN Stack - Data Visvulisation Web Applications</span>
               </p>
               <div className="mt-4 flex justify-center items-center gap-4 ">
                 <a href="https://www.linkedin.com/in/raja-umer-saleem" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
@@ -45,12 +45,17 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <footer className="w-full h-[10vh] font-bold text-xl md:text-4xl md:font-extrabold flex justify-center items-center text-white text-center">
+
+        <footer className="w-full h-[10vh] font-bold md:mt-5 text-xl md:text-6xl md:font-extrabold flex justify-center items-center  text-center text-gray-400">
           Ready to Take Your Business to the Next Level?
         </footer>
+
+      
       </main>
     </>
   );
 };
 
 export default memo(Home);
+
+

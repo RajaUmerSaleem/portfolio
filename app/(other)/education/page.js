@@ -55,11 +55,11 @@ const institutes = [
 
 const EducationPage = () => {
   return (
-    <main className="h-[90vh]  w-[100%] pt-4 ">
+    <main className="h-[90vh]  w-[100%] pt-16 ">
          <div className="h-[10%] text-4xl font-bold flex items-center pl-10 text-white">
         Education
       </div>
-      <div className="h-[80vh] flex flex-col items-center overflow-scroll overflow-x-hidden custom-scrollbar">
+      <div className="h-[100%] flex flex-col items-center overflow-scroll overflow-x-hidden custom-scrollbar">
         {institutes.map((institute, index) => (
           <motion.div
             key={institute.id}

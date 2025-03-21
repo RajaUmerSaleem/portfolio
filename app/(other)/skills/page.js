@@ -37,7 +37,7 @@ const skills = [
 const SkillsPage = () => {
   return (
     <>
-      <div className='h-[10vh] text-4xl font-bold flex items-center pl-10 text-white'>
+      <div className='h-[10vh] mt-16 text-4xl font-bold flex items-center pl-16 text-white'>
         Skills
       </div>
       <div className='flex justify-center flex-wrap h-[80vh] w-[100%] overflow-scroll overflow-x-hidden custom-scrollbar'>

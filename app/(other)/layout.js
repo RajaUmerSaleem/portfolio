@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <main className="h-[100%] sm:w-[60vw] w-[100vw] m-auto ">
+        <main className="h-[100vh] v-[100vw] md:w-[90vw] m-auto ">
             <Nav />
             {children}
         </main>

@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,12 @@ export default function RootLayout({ children }) {
         <div className="bg-black h-[100vh] w-[100vw] m-0 p-0 overflow-hidden">
         {children}
         </div>
+        <a href="https://wa.me/03034506235?text=Hello%20Raja%20Umer%20Saleem,%20I%20would%20like%20to%20contact%20you."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-8 md:right-20 right-4 bg-gray-500 bg-opacity-50 backdrop-blur-lg rounded-full text-green-500 hover:text-green-600 transition-colors z-50">
+          <IoLogoWhatsapp size={40} />
+        </a>
       </body>
     </html>
   );
